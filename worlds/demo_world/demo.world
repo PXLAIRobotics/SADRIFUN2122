@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  
+  <world name="roadstest">
+    <scene>
+      <grid>false</grid>
+    </scene>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+        
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+ <model name="speed_70_1">
+      <pose>5.4 -20.7 0.005  0 0 -1.5</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_70.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+     <model name="speed_70_2">
+      <pose>1 -15 0.005  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_70.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    
+
+    <model name="speed_90_3">
+      <pose>-15.6 0 0.005  0 0 -3</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_90.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+     <model name="speed_70_4">
+      <pose>-10.005 5.5 0.005  0 0 1.5</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_70.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+     <model name="speed_90_5">
+      <pose>5.005 5.5 0.005 0 0 1.5</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_90.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="access_denied">
+      <pose>-0.005 3.995 0.005  0 0 -3</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://access_denied.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="stop_sign">
+      <pose>1.005 3.995 0.005  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://stop_sign.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+     <model name="speed_90_6">
+      <pose>10.5 -15 0.005  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_90.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+     <model name="speed_70_7">
+      <pose>10.5 0 0.005  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://speed_70.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+<road name="turn1">
+<width>1</width>
+<point>10.0 0.0 0.005</point>
+<point>10.0 2.0 0.005</point>
+<point>9.5 3.0 0.005</point>
+<point>8.5 4.0 0.005</point>
+<point>7.0 5.0 0.005</point>
+<point>5.0 5.0 0.005</point>
+</road>
+<road name="straight2">
+<width>1</width>
+<point>5.0 5.0 0.005</point>
+<point>-10.0 5.0 0.005</point>
+</road>
+<road name="turn3">
+<width>1</width>
+<point>-10.0 5.0 0.005</point>
+<point>-12.0 5.0 0.005</point>
+<point>-13.0 4.5 0.005</point>
+<point>-14.0 3.5 0.005</point>
+<point>-15.0 2.0 0.005</point>
+<point>-15.0 0.0 0.005</point>
+</road>
+<road name="straight4">
+<width>1</width>
+<point>-15.0 0.0 0.005</point>
+<point>-15.0 -10.0 0.005</point>
+</road>
+<road name="turn5">
+<width>1</width>
+<point>-15.0 -10.0 0.005</point>
+<point>-15.0 -12.0 0.005</point>
+<point>-14.5 -13.0 0.005</point>
+<point>-13.5 -14.0 0.005</point>
+<point>-12.0 -15.0 0.005</point>
+<point>-10.0 -15.0 0.005</point>
+</road>
+<road name="turn6">
+<width>1</width>
+<point>-10.0 -15.0 0.005</point>
+<point>-8.0 -15.0 0.005</point>
+<point>-7.0 -14.5 0.005</point>
+<point>-6.0 -13.5 0.005</point>
+<point>-5.0 -12.0 0.005</point>
+<point>-5.0 -10.0 0.005</point>
+</road>
+<road name="turn7">
+<width>1</width>
+<point>0.0 -5.0 0.005</point>
+<point>-2.0 -5.0 0.005</point>
+<point>-3.0 -5.5 0.005</point>
+<point>-4.0 -6.5 0.005</point>
+<point>-5.0 -8.0 0.005</point>
+<point>-5.0 -10.0 0.005</point>
+</road>
+<road name="straight8">
+<width>1</width>
+<point>0.5 5.0 0.005</point>
+<point>0.5 -15.0 0.005</point>
+</road>
+<road name="turn9">
+<width>1</width>
+<point>0.5 -15.0 0.005</point>
+<point>0.5 -17.0 0.005</point>
+<point>1.0 -18.0 0.005</point>
+<point>2.0 -19.0 0.005</point>
+<point>3.5 -20.0 0.005</point>
+<point>5.5 -20.0 0.005</point>
+</road>
+<road name="straight11">
+<width>1</width>
+<point>5.5 -20.0 0.005</point>
+<point>5.0 -20.0 0.005</point>
+</road>
+<road name="turn12">
+<width>1</width>
+<point>5.0 -20.0 0.005</point>
+<point>7.0 -20.0 0.005</point>
+<point>8.0 -19.5 0.005</point>
+<point>9.0 -18.5 0.005</point>
+<point>10.0 -17.0 0.005</point>
+<point>10.0 -15.0 0.005</point>
+</road>
+<road name="straight13">
+<width>1</width>
+<point>10.0 -15.0 0.005</point>
+<point>10.0 0.0 0.005</point>
+</road>
+
+    
+  </world>
+</sdf>
